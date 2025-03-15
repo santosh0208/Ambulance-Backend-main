@@ -38,6 +38,7 @@ export const createUser = async (req: Request, res: Response) => {
 export const loginUser = async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
+    console.log("asdfghjk",req.body)
     const user: any = await baseRepository.findOne("users", "email = $1", [
       email,
     ]);

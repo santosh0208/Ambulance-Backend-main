@@ -32,6 +32,8 @@ const createUsersTable = async () => {
           mobileNo VARCHAR(100)  NOT NULL,
           secondaryMobileNo VARCHAR(100)  UNIQUE,
           emailid VARCHAR(100) UNIQUE NOT NULL,
+          orgName VARCHAR(100),
+          orgType VARCHAR(100),
           status INTEGER NOT NULL
         );
       `);

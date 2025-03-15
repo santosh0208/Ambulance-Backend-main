@@ -5,6 +5,8 @@ export interface Hospital{
     secondaryMobileNo: string;
     emailid: string;
     status: number;
+    orgName: string;
+    orgType: string;
 }
 
 export const hospitalSchema = {
@@ -12,6 +14,8 @@ export const hospitalSchema = {
     mobileNo: {type: 'string', required: true},
     secondaryMobileNo: {type: 'string'},
     emailid: {type: 'string', required: true},
-    status: {type: 'number', required: true}
+    status: {type: 'number', required: true},
+    orgName: {type: 'string'},
+    orgType: {type: 'string'}
 }
 
