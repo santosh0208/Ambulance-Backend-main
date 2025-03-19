@@ -18,4 +18,3 @@ export const hospitalSchema = {
     orgName: {type: 'string'},
     orgType: {type: 'string'}
 }
-
